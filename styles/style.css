@@ -1,0 +1,232 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+.header {
+  height: 100px;
+  background: #f3bc00;
+}
+
+.main {
+  height: 550px;
+  background-image: url("../images/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__inner {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.main__title {
+  color: white;
+  text-transform: uppercase;
+}
+
+.main__desc {
+  max-width: 600px;
+}
+
+.main__desc-item {
+  font-size: 21px;
+  line-height: 25px;
+  color: white;
+  font-weight: 400;
+}
+
+.main__btns {
+  margin-top: 30px;
+}
+
+.main__btn {
+  font-size: 17px;
+  font-weight: bold;
+  width: 200px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.main__btn:nth-child(2) {
+  margin-left: 33px;
+}
+
+.main__btn--white {
+  color: white;
+  border: 1px solid white;
+}
+
+.main__btn--yellow {
+  color: #000000;
+  background-color: #f3bc00;
+}
+
+.section_map {
+  min-height: 320px;
+  background-image: url("../images/map.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 5;
+}
+
+.section_services .section__title {
+  margin-top: 40px;
+}
+
+.section_services .section__inner {
+  position: relative;
+}
+
+.section_services #truck {
+  position: absolute;
+  left: -87px;
+  top: -65px;
+  z-index: 4;
+}
+
+.section_services .myblock {
+  background-color: chartreuse;
+  height: 660px;
+}
+
+.section_services .section__titling {
+  margin-left: 58%;
+}
+
+.section_services .section__title,
+.section_services .separator-block {
+  text-align: start;
+}
+
+.section__title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
+
+.benefits__item {
+  max-width: 260px;
+}
+
+.benefits__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.benefits__item-title {
+  min-height: 40px;
+}
+
+.benefits__item-title::before {
+  content: url("../images/ar-bullet.png");
+  margin-right: 10px;
+}
+
+.separator {
+  border-bottom: 2px solid #e4b505;
+  display: inline-block;
+  width: 123px;
+}
+
+.separator-block {
+  text-align: center;
+}
+
+.map-block {
+  max-width: 720px;
+}
+
+.map-block__desc {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  color: black;
+}
+
+.map-block__desc span {
+  color: #f3bc00;
+}
+
+.services__item {
+  margin-top: 60px;
+}
+
+.services__item-title {
+  min-height: 40px;
+}
+
+.services__item-title::before {
+  content: url("../images/ar-bullet.png");
+  margin-right: 10px;
+}
+/*# sourceMappingURL=style.css.map */

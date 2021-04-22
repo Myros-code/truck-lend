@@ -1,0 +1,221 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+// HEADER STYLES START
+.header {
+  height: 100px;
+  background: #f3bc00;
+
+  &__inner {
+  }
+
+  &__logo {
+    // max-width: 485px;
+    // border-bottom: 100px solid #f3bc00;
+    // border-left: 50px solid transparent;
+
+    // transform: rotate(180deg);
+    // height: 0;
+    // // transform: skew(-30deg);
+    &-inner {
+    }
+  }
+}
+
+//----------------------------HEADER STYLES END---------------------------------
+
+//----------------------------MAIN STYLES START---------------------------------
+.main {
+  height: 550px;
+  background-image: url("../images/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  &__title {
+    color: white;
+    text-transform: uppercase;
+  }
+  &__desc {
+    max-width: 600px;
+
+    &-item {
+      font-size: 21px;
+      line-height: 25px;
+      color: white;
+      font-weight: 400;
+    }
+  }
+  &__btns {
+    margin-top: 30px;
+  }
+  &__btn {
+    font-size: 17px;
+    font-weight: bold;
+    width: 200px;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 10px;
+
+    &:nth-child(2) {
+      margin-left: 33px;
+    }
+
+    &--white {
+      color: white;
+      border: 1px solid white;
+    }
+
+    &--yellow {
+      color: #000000;
+      background-color: #f3bc00;
+    }
+  }
+}
+//----------------------------MAIN STYLES END---------------------------------
+
+//----------------------------SECTION STYLES START---------------------------------
+.section {
+  &_map {
+    min-height: 320px;
+    background-image: url("../images/map.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 5;
+  }
+
+  &_services {
+    .section__title {
+      margin-top: 40px;
+    }
+    .section__inner {
+      position: relative;
+    }
+    #truck {
+      position: absolute;
+      left: -87px;
+      top: -65px;
+
+      z-index: 4;
+    }
+    .myblock {
+      background-color: chartreuse;
+      height: 660px;
+    }
+    .section__titling {
+      margin-left: 58%;
+    }
+    .section__title,
+    .separator-block {
+      text-align: start;
+    }
+  }
+
+  &__inner {
+  }
+  &__title {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+  }
+}
+//----------------------------SECTION STYLES END---------------------------------
+
+//----------------------------BENEFITS STYLES START---------------------------------
+.benefits {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding-bottom: 20px;
+  &__item {
+    max-width: 260px;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &-title {
+      min-height: 40px;
+      &::before {
+        content: url("../images/ar-bullet.png");
+        margin-right: 10px;
+      }
+    }
+
+    &-desc {
+    }
+  }
+}
+//----------------------------BENEFITS STYLES END---------------------------------
+
+.separator {
+  border-bottom: 2px solid #e4b505;
+  display: inline-block;
+  width: 123px;
+  &-block {
+    text-align: center;
+  }
+  &_main {
+  }
+}
+
+.map-block {
+  max-width: 720px;
+
+  &__desc {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+    span {
+      color: #f3bc00;
+    }
+  }
+}
+
+.services {
+  &__item {
+    margin-top: 60px;
+    &-title {
+      min-height: 40px;
+      &::before {
+        content: url("../images/ar-bullet.png");
+        margin-right: 10px;
+      }
+    }
+
+    &-desc {
+    }
+  }
+}
