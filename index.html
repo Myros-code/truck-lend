@@ -16,16 +16,70 @@
     <link rel="stylesheet" href="./styles/owl.theme.default.min.css" />
   </head>
   <body>
+    <!---------- HEADER -------------->
     <div class="wrapper">
       <header class="header">
         <div class="header__inner">
           <div class="header__logo">
-            <div class="header__logo-inner"></div>
+            <div class="header__logo-bg"></div>
+            <div class="header__logo-inner">
+              <a class="header__logo-link">
+                <img
+                  class="header__logo-img"
+                  src="./images/logo.png"
+                  alt="logo"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="header__menu-container">
+            <div class="header__contacts">
+              <a
+                href="email:info@intrademanagement.com "
+                class="header__contacts-item"
+              >
+                <i class="header__contacts-img-block">
+                  <img
+                    class="header__contacts-img"
+                    src="./images/letter.png"
+                    alt="email"
+                  />
+                </i>
+                <span class="header__contacts-text"
+                  >info@intrademanagement.com</span
+                >
+              </a>
+              <a href="tel:+31 644 587 906" class="header__contacts-item">
+                <i class="header__contacts-img-block">
+                  <img
+                    class="header__contacts-img"
+                    src="./images/phone.png"
+                    alt="phone"
+                  />
+                </i>
+                <span class="header__contacts-text">+31 644 587 906</span>
+              </a>
+            </div>
+
+            <div class="header__nav">
+              <div class="header__nav-bg"></div>
+              <nav class="header__nav-inner">
+                <a href="#!" class="header__nav-item">Main page</a>
+                <a href="#!" class="header__nav-item">Benefits</a>
+                <a href="#!" class="header__nav-item">Services</a>
+                <a href="#!" class="header__nav-item header__nav-item--w"
+                  >Global trade services</a
+                >
+                <a href="#!" class="header__nav-item">Contacts</a>
+              </nav>
+            </div>
           </div>
         </div>
       </header>
     </div>
+    <!---------- /HEADER -------------->
 
+    <!---------- MAIN -------------->
     <main class="main">
       <div class="wrapper">
         <div class="main__inner">
@@ -49,6 +103,7 @@
         </div>
       </div>
     </main>
+    <!---------- /MAIN -------------->
 
     <section class="section">
       <div class="wrapper">
@@ -135,10 +190,13 @@
 
     <section class="section section_services">
       <div class="wrapper">
-        <div class="section__inner">
-          <img src="./images/truck.png" alt="" id="truck" />
-          <div class="section__titling">
-            <h2 class="section__title">Services</h2>
+        <div class="service-block">
+          <div class="service-block__img-wrap">
+            <img src="./images/truck.png" alt="" class="service-block__img" />
+          </div>
+
+          <div class="service-block__desc">
+            <h2 class="service-block__title">Services</h2>
             <div class="separator-block">
               <span class="separator"></span>
             </div>
@@ -163,7 +221,458 @@
           </div>
         </div>
       </div>
-      <div class="myblock"></div>
+      <div class="about-service">
+        <div class="wrapper">
+          <div class="about-service__inner">
+            <h3 class="about-service__title">Transportation</h3>
+            <p class="about-service__desc">
+              Intrade Management can provide you with a wide range of
+              international freight and customs clearance services.
+              With a strong background in ­logistics, our specialists know the
+              industry inside out: from international cargo transportation, to
+              customs clearance and document requirements. We specialize in all
+              types of road, air and sea transportation, the choice depends on
+              the location of goods and your deadlines.
+            </p>
+            <div class="about-service__items">
+              <div class="about-service__item">
+                <img
+                  src="./images/truck-ico.png"
+                  alt="truck"
+                  class="about-service__item-img"
+                />
+                <div class="about-service__item-content">
+                  <h3 class="about-service__item-title">Delivery By Land</h3>
+                  <p class="about-service__item-desc">
+                    Intrade Management is a reliable truck transportation
+                    partner. We offer both full truck load (FTL) and
+                    less-than-truckload (LTL) services, both palletized and
+                    non-palletized, in boxes, or in extra or special packaging.
+                  </p>
+                </div>
+              </div>
+              <div class="about-service__item">
+                <img
+                  src="./images/boat.png"
+                  alt="boat"
+                  class="about-service__item-img"
+                />
+                <div class="about-service__item-content">
+                  <h3 class="about-service__item-title">Delivery By Sea</h3>
+                  <p class="about-service__item-desc">
+                    We also have long-term relations with major sea companies,
+                    and can offer a wide range of sea transportation services,
+                    including full-container-load (FCL) and
+                    less-than-container-load (LCL) delivery. High safety and
+                    cost-efficiency of sea transportation as compared to other
+                    means of transport are its undeniable advantages. Moreover,
+                    high capacity of sea vessels allows transporting
+                    ­larger cargoes.
+                  </p>
+                </div>
+              </div>
+              <div class="about-service__item">
+                <img
+                  src="./images/plane.png"
+                  alt="plane"
+                  class="about-service__item-img"
+                />
+                <div class="about-service__item-content">
+                  <h3 class="about-service__item-title">Delivery By Air</h3>
+                  <p class="about-service__item-desc">
+                    We will help you organize delivery of urgent or especially
+                    valuable cargoes by the fastest and sometimes the only
+                    possible means of transport — by air. We are able to deliver
+                    cargoes from any airport across the world.
+                  </p>
+                </div>
+              </div>
+              <div class="about-service__item">
+                <img
+                  src="./images/costoms.png"
+                  alt="costoms"
+                  class="about-service__item-img"
+                />
+                <div class="about-service__item-content">
+                  <h3 class="about-service__item-title">Customs</h3>
+                  <p class="about-service__item-desc">
+                    We provide a full range of services related to customs
+                    clearance. Our specialists will choose the best way of
+                    customs processing for you, providing individual approach
+                    and high quality of service. We are experienced in
+                    organizing forwarding and storage services, insurance of
+                    your cargo, and local delivery after customs clearance, all
+                    the way up to the consignee’s door.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="style-block style-block--yellow style-block--b"></div>
+      </div>
+      <div class="wrapper">
+        <div class="service-block service-block--reverse">
+          <div class="service-block__img-wrap">
+            <img src="./images/port.png" alt="" class="service-block__img" />
+          </div>
+
+          <div class="service-block__desc">
+            <div class="services__item">
+              <h3 class="services__item-title">Consulting</h3>
+              <p class="services__item-desc">
+                If you want greater control over your transportation expenses
+                and activities, there is a need for experts who are well
+                informed in the field of logistics. Intrade Management provides
+                exactly these kinds of experts. Our trading and logistics
+                solutions generally save up to 10% of your logistics costs. We
+                review, analyze and help you to plan your logistics activities
+                or find solutions when needed. As a result, you will achieve the
+                desirable level of your goods transportation with high quality
+                and at lowest possible costs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <section class="section section--dark section_counters">
+      <div class="style-block style-block--black style-block--t"></div>
+      <div class="wrapper">
+        <div class="section__inner">
+          <h2 class="section__title">Counters</h2>
+          <div class="separator-block">
+            <span class="separator"></span>
+          </div>
+
+          <div class="counters">
+            <div class="count-item">
+              <span class="count-item__num">32K+</span>
+              <span class="count-item__desc">Freights delivered</span>
+            </div>
+            <div class="count-item">
+              <span class="count-item__num">246 000</span>
+              <span class="count-item__desc">Clients</span>
+            </div>
+            <div class="count-item">
+              <span class="count-item__num">246 000</span>
+              <span class="count-item__desc">Years of expirience</span>
+            </div>
+            <div class="count-item">
+              <span class="count-item__num">15</span>
+              <span class="count-item__desc">Countries</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="style-block style-block--black style-block--b"></div>
+    </section>
+
+    <section class="section section_dignity">
+      <div class="wrapper">
+        <div class="section__inner">
+          <h2 class="section__title">Global trade services</h2>
+          <div class="separator-block">
+            <span class="separator"></span>
+          </div>
+          <h3 class="section__subtitle">Why Intrade Management</h3>
+
+          <div class="dignity">
+            <div class="dignity__item">
+              <div class="">
+                <img
+                  class="dignity__item-img"
+                  src="./images/galka.png"
+                  alt="galka"
+                />
+              </div>
+
+              <p class="dignity__item-desc">
+                <strong>Costs and time saving —</strong>
+                Using Intade Management is the ­wisest way to purchase and
+                deliver goods from a third country to the European Union or vice
+                versa.
+              </p>
+            </div>
+            <div class="dignity__item">
+              <div class="">
+                <img
+                  class="dignity__item-img"
+                  src="./images/galka.png"
+                  alt="galka"
+                />
+              </div>
+              <p class="dignity__item-desc">
+                <strong>Less risks and obligations for you — </strong>
+                We assume full liability for the contract operations until we
+                deliver the goods to you.
+              </p>
+            </div>
+            <div class="dignity__item">
+              <div class="">
+                <img
+                  class="dignity__item-img"
+                  src="./images/galka.png"
+                  alt="galka"
+                />
+              </div>
+              <p class="dignity__item-desc">
+                <strong
+                  >You do not need any special knowledge of third countries’
+                  rules</strong
+                >
+                if you work with Intrade ­Management — Our experienced team will
+                take care of it for you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section_contact-us">
+      <div class="wrapper">
+        <div class="section__inner">
+          <div class="contact-us">
+            <div class="contact-us__img-block">
+              <img
+                class="contact-us__img"
+                src="./images/phone-ico.png"
+                alt="phone"
+              />
+            </div>
+            <p class="contact-us__desc">
+              You can <a href="#">contact us</a> to order any international
+              delivery and customs clearance services you need, we will be happy
+              to save you from all logistics worries.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section_howDo">
+      <div class="wrapper">
+        <div class="section__inner">
+          <h3 class="section__subtitle">How we do it</h3>
+          <div class="howDo-lists">
+            <ul class="howDo-list">
+              <li class="howDo-list__item">
+                First, we meet you to discuss your objectives and the goods you
+                need. After that, our search for the best suppler begins.
+              </li>
+              <li class="howDo-list__item">
+                Then we provide you with a list of possible suppliers and
+                required products, and you can choose the best option in
+                accordance with your tasks.
+              </li>
+              <li class="howDo-list__item">
+                After choosing a supplier, you will receive full consulting
+                support when concluding a foreign economic contract.
+              </li>
+              <li class="howDo-list__item">
+                At your request, our company can conclude a foreign economic
+                contract with a supplier on your behalf and purchase the
+                required goods for you. In this case, you will be free from the
+                worries of interaction with suppliers and customs authorities.
+              </li>
+              <li class="howDo-list__item">
+                We will provide all permits and documents required for the
+                transportation of goods.
+              </li>
+            </ul>
+            <ul class="howDo-list">
+              <li class="howDo-list__item">
+                We will offer you the best way to deliver the goods,
+                take all the worries of this process and deliver the goods
+                to your warehouse door.
+              </li>
+              <li class="howDo-list__item">
+                In case you order goods from several suppliers, we can provide
+                consolidation and storage of goods in our partners’ warehouses,
+                and then transport the goods in the same container.
+              </li>
+              <li class="howDo-list__item">
+                If you want to make sure of the reliability of the supplier,
+                we will provide a professional surveyor who will visit the
+                manufacturer’s factory before purchasing and examine the product
+                samples. The inspector can control the production process, check
+                the quality of goods and the deadlines.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark section_countacts">
+      <div class="style-block style-block--black style-block--t"></div>
+      <div class="wrapper">
+        <div class="section__inner">
+          <h2 class="section__title">Contact</h2>
+          <div class="separator-block">
+            <span class="separator"></span>
+          </div>
+
+          <div class="contacts">
+            <div class="contact-item">
+              <div class="contact-item__img-wrap">
+                <img src="./images/location.png" alt="" />
+              </div>
+              <div>
+                <span class="contact-item__title">Location</span>
+              </div>
+              <div class="">
+                <span class="contact-item__desc"
+                  >Andries Bickerweg 2, 2517 JP,<br />
+                  The Hague, Netherlands</span
+                >
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item__img-wrap">
+                <img src="./images/letterSign.png" alt="" />
+              </div>
+              <div>
+                <span class="contact-item__title">Email</span>
+              </div>
+              <div class="">
+                <span class="contact-item__desc"
+                  >info@intrademanagement.com</span
+                >
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item__img-wrap">
+                <img src="./images/phoneSign.png" alt="" />
+              </div>
+              <div>
+                <span class="contact-item__title">Phone</span>
+              </div>
+              <div class="">
+                <span class="contact-item__desc">+31 644 587 906</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="style-block style-block--black style-block--b"></div>
+    </section>
+
+    <section class="section section_form">
+      <div class="wrapper">
+        <div class="section__inner">
+          <h2 class="section__title">You can contact us</h2>
+          <form class="form" action="">
+            <div class="form__item">
+              <label class="form__label" for="">Freight type</label>
+              <input class="form__input" type="text" placeholder="Choose" />
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="">Company</label>
+              <input
+                class="form__input"
+                type="text"
+                placeholder="Enter your Company Name"
+              />
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="">Name</label>
+              <input
+                class="form__input"
+                type="text"
+                placeholder="Enter your Name"
+              />
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="">E-mail</label>
+              <input
+                class="form__input"
+                type="email"
+                placeholder="Enter your e-mail"
+              />
+            </div>
+            <div class="form__textarea-block">
+              <label class="form__label" for="">Additional notes</label>
+              <textarea
+                placeholder="Enter your message"
+                class="form__textarea"
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <div class="form__submit-block">
+              <button class="form__submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__inner">
+          <div class="footer__desc">
+            <div class="footer__logo">
+              <a href="#">
+                <img src="./images/footerLogo.png" alt="logo" />
+              </a>
+            </div>
+            <p class="footer__desc-item">
+              Intrade Management BV is a Dutch trading company, specializing in
+              purchasing and delivering goods.
+            </p>
+          </div>
+
+          <div class="footer__nav">
+            <nav class="footer__nav-inner">
+              <a href="#!" class="footer__nav-item">Main page</a>
+              <a href="#!" class="footer__nav-item">Benefits</a>
+              <a href="#!" class="footer__nav-item">Services</a>
+              <a href="#!" class="footer__nav-item">Global trade services</a>
+              <a href="#!" class="footer__nav-item">Contacts</a>
+            </nav>
+            <div class="footer-social">
+              <a href="">
+                <img src="./images/signs.png" alt="signs" />
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__up-btn">
+            <button>
+              <img src="./images/yellowCircle.png" alt="cirkle" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+    <div class="container">
+        <div class="content">
+            
+            <nav role="navigation">
+              <div id="menuToggle">
+                <input type="checkbox" />
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Info</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+             </div>
+            </nav>
+          </div>
+      </div>
+     
   </body>
 </html>
