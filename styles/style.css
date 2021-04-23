@@ -36,6 +36,10 @@ body {
 }
 
 .header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background-color: white;
   min-height: 100px;
 }
 
@@ -379,6 +383,13 @@ body {
 .main__btn--white {
   color: white;
   border: 1px solid white;
+  -webkit-transition: all .5 ease-in-out;
+  transition: all .5 ease-in-out;
+}
+
+.main__btn--white:hover {
+  background-color: white;
+  color: black;
 }
 
 .main__btn--yellow {
