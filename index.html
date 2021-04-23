@@ -14,15 +14,11 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/owl.carousel.min.css" />
     <link rel="stylesheet" href="./styles/owl.theme.default.min.css" />
-    <link
-    rel="stylesheet"
-    href="./styles/all-animation.min.css"
-  />
   </head>
   <body>
     <!---------- HEADER -------------->
     
-      <header class="header">
+      <header class="header" id="top">
         <div class="wrapper">
         <div class="header__inner">
           <div class="header__logo">
@@ -47,18 +43,24 @@
             <div class="mob-menu">
                 
                 <nav class="mob-menu__nav">
-                    <a href="#!" class="mob-menu__nav-item">Main page</a>
-                    <a href="#!" class="mob-menu__nav-item">Benefits</a>
-                    <a href="#!" class="mob-menu__nav-item">Services</a>
-                    <a href="#!" class="mob-menu__nav-item"
+                    <a href="#main" class="mob-menu__nav-item">Main page</a>
+                    <a href="#benefits" class="mob-menu__nav-item">Benefits</a>
+                    <a href="#services" class="mob-menu__nav-item">Services</a>
+                    <a href="#globalTrade" class="mob-menu__nav-item"
                       >Global trade services</a
                     >
-                    <a href="#!" class="mob-menu__nav-item">Contacts</a>
+                    <a href="#contacts" class="mob-menu__nav-item">Contacts</a>
+                    <a href="#why">
+                        Why Intrade Management
+                       </a>
+                       <a href="#how"> 
+                        How we do it
+                       </a>
                   </nav>
             </div>
             <div class="header__contacts">
               <a
-                href="email:info@intrademanagement.com "
+                href="mailto:info@intrademanagement.com"
                 class="header__contacts-item"
               >
                 <i class="header__contacts-img-block">
@@ -84,15 +86,27 @@
               </a>
             </div>
             <div class="header__nav">
+                <div class="header-dropdovn">
+                    <a href="#why">
+                     >    Why Intrade Management
+                    </a>
+                    <a href="#how"> 
+                     >    How we do it
+                    </a>
+                </div>
               <div class="header__nav-bg"></div>
               <nav class="header__nav-inner">
-                <a href="#!" class="header__nav-item">Main page</a>
-                <a href="#!" class="header__nav-item">Benefits</a>
-                <a href="#!" class="header__nav-item">Services</a>
-                <a href="#!" class="header__nav-item header__nav-item--w"
-                  >Global trade services</a
+                <a href="#main" class="header__nav-item">Main page</a>
+                <a href="#benefits" class="header__nav-item">Benefits</a>
+                <a href="#services" class="header__nav-item">Services</a>
+                <a href="#!" class="header__nav-item drop"
+                  >Global trade services
+
+                  
+                  
+                  </a
                 >
-                <a href="#!" class="header__nav-item">Contacts</a>
+                <a href="#contacts" class="header__nav-item">Contacts</a>
               </nav>
             </div>
           </div>
@@ -103,7 +117,7 @@
     <!---------- /HEADER -------------->
 
     <!---------- MAIN -------------->
-    <div class="owl-carousel">
+    <div class="owl-carousel" id="main">
         <main class="main">
             <button class="prevBtn">
                 <img src="./images/leftArrow.png" alt="left arrow">
@@ -191,7 +205,7 @@
     </div>
     <!---------- /MAIN -------------->
 
-    <section class="section">
+    <section class="section" id="benefits">
       <div class="wrapper">
         <div class="section__inner">
           <h2 class="section__title">Benefits</h2>
@@ -274,7 +288,7 @@
       </div>
     </section>
 
-    <section class="section section_services">
+    <section class="section section_services" id="services">
       <div class="wrapper">
         <div class="service-block">
           <div class="service-block__img-wrap">
@@ -325,7 +339,7 @@
                 <img
                   src="./images/truck-ico.png"
                   alt="truck"
-                  class="about-service__item-img"
+                  class="about-service__item-img bounce-2"
                 />
                 <div class="about-service__item-content">
                   <h3 class="about-service__item-title">Delivery By Land</h3>
@@ -341,7 +355,7 @@
                 <img
                   src="./images/boat.png"
                   alt="boat"
-                  class="about-service__item-img"
+                  class="about-service__item-img bounce-2"
                 />
                 <div class="about-service__item-content">
                   <h3 class="about-service__item-title">Delivery By Sea</h3>
@@ -361,7 +375,7 @@
                 <img
                   src="./images/plane.png"
                   alt="plane"
-                  class="about-service__item-img"
+                  class="about-service__item-img bounce-2"
                 />
                 <div class="about-service__item-content">
                   <h3 class="about-service__item-title">Delivery By Air</h3>
@@ -377,7 +391,7 @@
                 <img
                   src="./images/costoms.png"
                   alt="costoms"
-                  class="about-service__item-img"
+                  class="about-service__item-img bounce-2"
                 />
                 <div class="about-service__item-content">
                   <h3 class="about-service__item-title">Customs</h3>
@@ -433,20 +447,20 @@
           </div>
 
           <div class="counters">
-            <div class="count-item">
-              <span class="count-item__num">32K+</span>
+            <div class="count-item benefits__inner">
+              <span class="count-item__num benefits__number">32542</span>
               <span class="count-item__desc">Freights delivered</span>
             </div>
-            <div class="count-item">
-              <span class="count-item__num">246 000</span>
+            <div class="count-item benefits__inner">
+              <span class="count-item__num benefits__number">246 000</span>
               <span class="count-item__desc">Clients</span>
             </div>
-            <div class="count-item">
-              <span class="count-item__num">246 000</span>
+            <div class="count-item benefits__inner">
+              <span class="count-item__num benefits__number">246 000</span>
               <span class="count-item__desc">Years of expirience</span>
             </div>
-            <div class="count-item">
-              <span class="count-item__num">15</span>
+            <div class="count-item benefits__inner">
+              <span class="count-item__num benefits__number">15</span>
               <span class="count-item__desc">Countries</span>
             </div>
           </div>
@@ -455,7 +469,7 @@
       <div class="style-block style-block--black style-block--b"></div>
     </section>
 
-    <section class="section section_dignity">
+    <section class="section section_dignity" id="why">
       <div class="wrapper">
         <div class="section__inner">
           <h2 class="section__title">Global trade services</h2>
@@ -468,7 +482,7 @@
             <div class="dignity__item">
               <div class="">
                 <img
-                  class="dignity__item-img"
+                  class="dignity__item-img  bounce-2"
                   src="./images/galka.png"
                   alt="galka"
                 />
@@ -484,7 +498,7 @@
             <div class="dignity__item">
               <div class="">
                 <img
-                  class="dignity__item-img"
+                  class="dignity__item-img  bounce-2"
                   src="./images/galka.png"
                   alt="galka"
                 />
@@ -498,7 +512,7 @@
             <div class="dignity__item">
               <div class="">
                 <img
-                  class="dignity__item-img"
+                  class="dignity__item-img bounce-2"
                   src="./images/galka.png"
                   alt="galka"
                 />
@@ -522,11 +536,13 @@
         <div class="section__inner">
           <div class="contact-us">
             <div class="contact-us__img-block">
-              <img
-                class="contact-us__img"
-                src="./images/phone-ico.png"
-                alt="phone"
-              />
+                <a href="tel:+31 644 587 906">
+                    <img
+                    class="contact-us__img pulse"
+                    src="./images/phone-ico.png"
+                    alt="phone"
+                  />
+                </a>
             </div>
             <p class="contact-us__desc">
               You can <a href="#">contact us</a> to order any international
@@ -538,7 +554,7 @@
       </div>
     </section>
 
-    <section class="section section_howDo">
+    <section class="section section_howDo" id="how">
       <div class="wrapper">
         <div class="section__inner">
           <h3 class="section__subtitle">How we do it</h3>
@@ -567,8 +583,6 @@
                 We will provide all permits and documents required for the
                 transportation of goods.
               </li>
-            </ul>
-            <ul class="howDo-list">
               <li class="howDo-list__item">
                 We will offer you the best way to deliver the goods,
                 take all the worries of this process and deliver the goods
@@ -592,7 +606,7 @@
       </div>
     </section>
 
-    <section class="section section--dark section_countacts">
+    <section class="section section--dark section_countacts" id="contacts">
       <div class="style-block style-block--black style-block--t"></div>
       <div class="wrapper">
         <div class="section__inner">
@@ -624,8 +638,8 @@
                 <span class="contact-item__title">Email</span>
               </div>
               <div class="">
-                <span class="contact-item__desc"
-                  >info@intrademanagement.com</span
+                <a href="mailto:info@intrademanagement.com" class="contact-item__desc"
+                  >info@intrademanagement.com</a
                 >
               </div>
             </div>
@@ -637,7 +651,7 @@
                 <span class="contact-item__title">Phone</span>
               </div>
               <div class="">
-                <span class="contact-item__desc">+31 644 587 906</span>
+                <a href="tel:+31 644 587 906"  class="contact-item__desc">+31 644 587 906</a>
               </div>
             </div>
           </div>
@@ -646,7 +660,7 @@
       <div class="style-block style-block--black style-block--b"></div>
     </section>
 
-    <section class="section section_form">
+    <section class="section section_form" id="form">
       <div class="wrapper">
         <div class="section__inner">
           <h2 class="section__title">You can contact us</h2>
@@ -697,6 +711,7 @@
         </div>
       </div>
     </section>
+
     <footer class="footer">
       <div class="wrapper">
         <div class="footer__inner">
@@ -729,7 +744,9 @@
 
           <div class="footer__up-btn">
             <button>
-              <img src="./images/yellowCircle.png" alt="cirkle" />
+                <a href="#top" class="">
+                    <img src="./images/yellowCircle.png" alt="cirkle" />
+                </a>
             </button>
           </div>
         </div>
@@ -737,8 +754,8 @@
     </footer>
 
     <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.spincrement.min.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
-    <script src="./js/animaions.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
